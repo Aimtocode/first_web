@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+/* futuristic design font from google */
+body {
+    font-family: 'Audiowide', sans-serif;
+}
+
+/*Noticeable header*/
+h1 {
+    font-size: 160%;
+    text-align:center; 
+    color: black; 
+}
+
+p {
+    text-align: center;   
+}
+
+/*modern design: change color when clicking the link*/
+a:link {
+    color:black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+a:active {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/*well-organized contents and buttons*/
+header {
+    display:flex;
+}
+button {
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+}
+button:hover {
+    background-color: grey;
+}
+
+/*frame format of my face*/
+#minseo {
+    width : 280px; 
+    height : 300px;
+    display: block; 
+    margin: auto;
+    border-radius: 15px;
+    
+}
+
+/*normal design: content's height*/
+.tabcontent {
+    height: 100%
+}
+
+
+/*centering chart in the page*/
+.tabcontent2 {
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+   
+}
+
+
+/*zig-zag design : reversing order of text and pictures */
+#grid {
+    text-align: left;
+    display: grid;
+    gap: 10px;
+    
+    grid-template-columns: 1fr 3fr;
+}
+
+#grid2 {
+    text-align: left;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+#grid .text-content, #grid2 .text-content {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*adjusting design of images */
+.goalsImg {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/*adjusting design of button and option */
+.semester {
+    margin-right: 10px;
+}
+
+#click, .semester {
+    width: 88px;
+    height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

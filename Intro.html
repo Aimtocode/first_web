@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <!-- reference overall styles of my website -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- reference chart.js to show my grade chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- reference to implement buttons and other helpful functions in website -->
+    <script src="Intro.js"></script>
+  
+</head>
+
+<!-- structure of my default page -->
+<body>
+    <img src="stonybrook.png" alt="stonybrook" width = "100" height = "100">
+    <header>
+        <button id="defaultOpen" onclick="showPage('AboutMe')">AboutMe</button>
+        <button onclick="showPage('Grade')">Grade</button>
+        <button onclick="showPage('Achievement')">Achievement</button>
+        <button onclick="showPage('Goals')">Goals</button>
+    </header>
+
+    <div id="AboutMe" class="tabcontent" >
+    <i><h1> Make StonyBrook Great Again</h1></i> 
+    <img id="minseo" src= "minseo.png" title= "Beginner" alt="Minseo Kim">
+    <p> Name: &#x1FA96;Minseo Kim</p>
+    <p> Age: 23</p>
+    <p> Nationality: South Korea</p>
+    <p> Major: &#x1F4BB;Computer science</p>
+    <p> Hobby: &#x1F4D6;IT ,&#x1F3A7;Rock Music</p>
+    <p> If you have any questions, please contact me by email.</p>
+    <p><a href = "mailto:minseohappy07@gmail.com">Email: minseohappy07@gmail.com</a></p>
+    <p><a href = "https://www.stonybrook.edu/" target="_blank">🎓Visit MyUniversity</a></p>
+    </div>
+
+
+<!-- structure of my second content-->
+ <div id="Grade" class="tabcontent">
+        <h2>Semester</h2>
+        <header>
+        <select class="semester">
+            <option value="Spring21">Spring21</option>
+            <option value="Fall21">Fall21</option>
+            <option value="Spring24">Spring24</option>
+            <option value="Fall24">Fall24</option>
+        </select>
+        <button id="click" type="button" onclick="yearSelector()">click</button> </header>
+    <div class="chart">
+    <div id="Spring21" class="tabcontent2">
+        <canvas id="Sp21Chart" style="width: 50%; max-width: 600px;"></canvas>
+        <p>CREDIT: 15</p>
+        <p>GPA: 3.13</p>
+        <p>CUM GPA: 3.13 </p>
+    </div>
+    <div id="Fall21" class="tabcontent2">
+        <canvas id="Fa21Chart" style="width: 50%; max-width: 600px;"></canvas>
+        <p>CREDIT: 18</p>
+        <p>GPA: 3.57</p>
+        <p>CUM GPA: 3.37 </p>
+    </div>
+
+    <div id="Spring24" class="tabcontent2">
+        <canvas id="Sp24Chart" style="width: 50%; max-width: 600px;"></canvas>
+        <p>CREDIT: 16</p>
+        <p>GPA: 3.46</p>
+        <p>CUM GPA: 3.4 </p>
+    </div>
+
+
+     <div id="Fall24" class="tabcontent2">
+        <canvas id="Fa24Chart" style="width: 50%; max-width: 600px;"></canvas>
+        <p>CREDIT: 20</p>
+        <p>GPA: 3.73</p>
+        <p>CUM GPA: 3.5</p>
+     </div>
+    </div>
+</div>
+    
+
+
+
+
+<!-- structure of my third content-->
+    <div id="Achievement" class="tabcontent" >
+        <h2>Achievement</h2> 
+        <dl>
+            <dt>◇ Spring 2021 ~ Fall 2021</dt>
+            <dd>-Learned Python, and Java </dd>
+            <dt>◇ Spring 2024</dt>
+            <dd>-Learned data structures and algorithms: Array, Linked List, 
+                Queue, Stack, Tree, Graph, DFS, BFS, Dijkstra</dd>
+            <dt>◇ Fall 2024</dt>
+            <dd>-Learned about low-level languages: C, Assembly, and functional language: Ocaml</dd>
+            <dt>◇ Winter 2024</dt>
+            <dd>-Made my own website, and AI chatbot</dd>
+        </dl>
+
+    </div>
+
+<!-- structure of my last content -->
+    <div id="Goals" class="tabcontent" >
+        <div id="grid">
+            <div>
+                <img class="goalsImg" src="field.jpg" alt="field">
+            </div>
+            <div class= "text-content">
+            <h2>Priority</h2> 
+            <p> My first priority is to find out the field that I can 
+                work for my rest of life. The field that I am considering is AI, and Full stack developer.
+                I will try several things that I thnk I am suitable. Above all, I will become accustomed to React, Node.js, and Next.js. 
+                Also, I will learn deeply about python regarding machine learning. Initially, I will do leetcode with python to 
+                get familiar with it. </p>    
+            </div>
+
+        </div>
+        <div id="grid2">
+
+            <div class="text-content">
+                <h2>2nd Goal</h2> 
+                <p> Actually, my second goal is related to the first goal. If I choose my field,
+                    I pursue having internship at the U.S IT company. It will not only be included in my career,
+                    but also have a higher chance to be hired. Furthermore, if I go back to Korea due to 
+                    personal issues, I will also have a chance to be hired to the Korea IT companies. 
+                    To accomplish the goal, I have to prepare for job interview and complete my portfolio.</p> 
+                </div>
+            <div>
+                <img class="goalsImg" src="internship.jpg" alt="Intern">
+            </div>
+            
+         
+        </div>
+    </div>    
+
+    
+</body>
+
+
+</html>
