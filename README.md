@@ -6,6 +6,6 @@ Since it is first time to do project, understand me if there is some awkward cod
 
 </br>
 
-<h2>website structure</h2>
+<h2>Website structure</h2>
 <dd>-AboutMe, Grade, Achievement, Goals </dd>
 
